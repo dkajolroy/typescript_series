@@ -1,13 +1,19 @@
 "use strict";
-// Enum, Union and predefined types
+//Functions types
 exports.__esModule = true;
-//Union types
-var value;
-value = 55;
-console.log(value);
-//Predefined types
-var name = "Kajol";
-console.log(name);
-var user;
-user = "b";
-console.log(user);
+//Not returning functions system 1
+var func;
+func = function () {
+    console.log("OK-1");
+};
+func();
+//Not returning functions system 2
+var func2 = function () {
+    console.log("OK-2");
+};
+func2();
+// Returning functions
+var rFunc = function (a, b) {
+    return a + b;
+};
+console.log(rFunc(1, 2));

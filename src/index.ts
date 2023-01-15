@@ -1,18 +1,21 @@
-// Enum, Union and predefined types
+//Functions types
 
-//Union types
-let value: string | number;
-value = 55;
-console.log(value);
+//Not returning functions system 1
+let func: () => void;
+func = () => {
+  console.log("OK-1");
+};
+func();
+//Not returning functions system 2
+let func2 = (): void => {
+  console.log("OK-2");
+};
+func2();
 
-//Predefined types
-let name: string = "Kajol";
-console.log(name);
-
-//Enum types
-type EnumType = "a" | "b" | "c" | "d";
-let user: EnumType;
-user = "b";
-console.log(user);
+// Returning functions
+const rFunc = (a: number, b: number): number => {
+  return a + b;
+};
+console.log(rFunc(1, 2));
 
 export {};
