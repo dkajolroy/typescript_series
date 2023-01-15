@@ -1,27 +1,13 @@
 "use strict";
-// Data types
-// String, Number, Boolean, Undefined, Null
+// Enum, Union and predefined types
 exports.__esModule = true;
-//Stings types
-var name;
-name = "ami";
+//Union types
+var value;
+value = 55;
+console.log(value);
+//Predefined types
+var name = "Kajol";
 console.log(name);
-//Number types
-var age;
-age = 22;
-console.log(age);
-//Arrays
 var user;
-user = ["kajol", "Ray"];
+user = "b";
 console.log(user);
-// Array of arrays
-var sub;
-sub = [["kajol", "Ray"]];
-console.log(sub);
-var userInfo;
-userInfo = {
-    name: "Kajol Roy",
-    age: 22,
-    married: false
-};
-console.log(userInfo);
