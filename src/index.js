@@ -1,19 +1,29 @@
 "use strict";
-//Functions types
+// OOP
 exports.__esModule = true;
-//Not returning functions system 1
-var func;
-func = function () {
-    console.log("OK-1");
-};
-func();
-//Not returning functions system 2
-var func2 = function () {
-    console.log("OK-2");
-};
-func2();
-// Returning functions
-var rFunc = function (a, b) {
-    return a + b;
-};
-console.log(rFunc(1, 2));
+//OOP System 1
+var User = /** @class */ (function () {
+    function User(name, role) {
+        this.name = name;
+        this.role = role;
+    }
+    User.prototype.log = function () {
+        console.log(this.name, this.role);
+    };
+    return User;
+}());
+var kajol = new User("Kajol", 22);
+kajol.log();
+//OOP System 2
+var Student = /** @class */ (function () {
+    function Student(name, address) {
+        this.name = name;
+        this.address = address;
+    }
+    Student.prototype.log = function () {
+        console.log(this.name, this.address);
+    };
+    return Student;
+}());
+var student1 = new Student("Kajol 1", "Lal");
+console.log(student1.log());
